@@ -1,0 +1,120 @@
+.menu-trigger {
+    padding: 10px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    color: var(--accent);
+    cursor: pointer;
+    position: relative;
+}
+
+
+.menu-trigger:hover {
+    background-color: var(--accent);
+}
+
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.menu-trigger:hover .dropdown-menu {
+    display: block;
+}
+
+
+.menu-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--accent);
+    transition: background-color 0.3s;
+}
+
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+
+.menu-item:hover {
+    background-color: var(--secondary);
+}
+
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.nav-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.nav-buttons button:hover {
+    background-color: var(--primary);
+}
+
+.quest-navigation {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#prev-quest, #next-quest {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#inventory-controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#inventory-controls button:hover {
+    background-color: var(--primary);
+}
+
+#prev-location, #next-location {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+/* #prev-location, #next-location button:hover {
+    background-color: var(--primary);
+} */

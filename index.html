@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <script src="inventory.js" defer></script>
+    <script src="locations.js" defer></script>
+    <title>The Mists of Tael'arun</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="menu-trigger">
+                Menu
+                <div class="dropdown-menu">
+                    <div class="menu-item">Quests</div>
+                    <div class="menu-item">Inventory</div>
+                    <div class="menu-item">Locations</div>
+                </div>
+            </div>
+
+            <h1>The Mists of Tael'arun</h1>
+        </div>
+        
+        
+    </header>
+   
+    <div class="quest-wrapper">
+        <div class="quest-container">
+            <div class="quest" data-quest="0">
+                <h2>1/6 The call for a hero</h2>
+                <p>You begin your journey as a hero of Tael'arun.
+                    In this quest you gather your items and put them in your inventory. <br>
+                    Discoveries: Magic Ring.
+                </p>
+            </div>
+            
+            <div class="quest" data-quest="1">
+                <h2>2/6 Echoes of the Past</h2>
+                <p>You uncover the mysteries of an ancient civilization, known as the Echoing Caves. <br>
+                    Discoveries: Ancient Tome.
+                </p>
+            </div>
+            
+            <div class="quest" data-quest="2">
+                <h2>3/6 The Ghoul</h2>
+                <p>You face the terrors that lurk in the shadows. <br>
+                You grab your rusty sword and slay the fearsome Ghoul!</p>
+            </div>
+            
+            <div class="quest" data-quest="3">
+                <h2>4/6 Deciphering the Ancient Tome</h2>
+                <p>Your Ancient Tome starts pulsing with hidden knowledge. <br>
+                    You decipher the secrets hidden within forgotten texts. <br>
+                Discoveries: The Light Bringer Ring</p>
+            </div>
+            
+            <div class="quest" data-quest="4">
+                <h2>5/6 Preparing for the Unknown</h2>
+                <p>With the The Light Bringer Ring in your inventory, <br>
+                    you take a look at how far you have gotten: <br>
+                    https://kenhugo-dt.github.io/Quest-05-Dom-Manipulation---Modifying/ <br>
+                    You are now ready for your last journey to the Dragon's Lair.
+                </p>
+            </div>
+
+            <div class="quest" data-quest="5">
+                <h2>6/6 The Mists of Tael'arun - Final Confrontation</h2>
+                <p>you slay Fyrebreath and save your beloved Tael'arun.</p>
+            </div>
+        </div>
+        <div class="quest-navigation">
+            <button id="prev-quest">Previous Quest</button>
+            <button id="next-quest">Next Quest</button>
+        </div>
+    </div>
+
+    
+    
+    
+    <div class="locations-wrapper">
+        <div class="locations-container">
+            <div class="locations-section content-section">
+                <h2>Locations of Tael'arun</h2>
+                
+                <div class="location" data-location="0">
+                    <h2>Whispering Forest</h2>
+                    <p>A mysterious forest where the leaves seem to whisper ancient secrets. <br>
+                        The trees are ancient and twisted, their branches creating intricate patterns against the misty sky.
+                    </p>
+                </div>
+                
+                <div class="location" data-location="1">
+                    <h2>Echoing Caves</h2>
+                    <p>Deep caverns where every sound resonates with mysterious echoes. <br>
+                        Strange crystals line the walls, glowing with an inner light.
+                    </p>
+                </div>
+                
+                <div class="location" data-location="2">
+                    <h2>Shimmering Riverside</h2>
+                    <p>A peaceful riverside where the water gleams with an otherworldly shine. <br>
+                        The waters are said to have healing properties.</p>
+                    </div>
+                    
+                    <div class="location" data-location="3">
+                        <h2>Crumbling Tower</h2>
+                        <p>An ancient watchtower, now in ruins. Despite its deteriorated state, <br>
+                            magical energies still pulse through its old stones.</p>
+                        </div>
+                        
+                        <div class="location" data-location="4">
+                            <h2>Dragon's Lair</h2>
+                            <p>A massive cavern atop the highest peak, home to the fearsome dragon of Tael'arun. <br>
+                                The entrance is scattered with charred remains and treasure fragments.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="location-navigation">
+                        <button id="prev-location">Previous Location</button>
+                        <button id="next-location">Next Location</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="inventory-wrapper">
+                <div class="inventory-container">
+                    <div id="inventory-controls">
+                        <input type="text" id="item-input" placeholder="Enter item name">
+                        <button id="add-item">Add new item</button>
+                        <button id="remove-item">Remove item</button>
+                    </div>
+                    
+                    <div id="hero-inventory"></div>
+                </div>
+            </div>
+            
+            <footer>
+                <p>&copy; 2024 Shitty Website. All revenge be served.</p>
+            </footer>
+        </body>
+        </html>

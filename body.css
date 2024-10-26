@@ -1,0 +1,57 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+}
+
+
+
+.body-content {
+    padding: 20px;
+    margin-bottom: 60px; /* Space for footer */
+}
+
+.quest-wrapper {
+    max-width: 800px; /* Increased width */
+    margin: 40px auto; /* Center in page */
+    padding: 0 20px;
+}
+
+.quest-container {
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 30px; /* Increased padding */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-height: 150px; /* Ensure consistent height */
+}
+
+.quest {
+    display: none;
+}
+
+.quest.active {
+    display: block;
+}
+
+.quest h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Larger title */
+}
+
+.quest p {
+    margin: 0;
+    font-size: 1.1em; /* Larger text */
+    line-height: 1.5;
+}
+
+#prev-quest, #next-quest {
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
